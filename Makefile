@@ -1,12 +1,10 @@
-output:
-	gcc -g -o output proj3.c helper3.c
-
+project1: project1.c
+	gcc -g -o output project1.c project1user.c
+run: 
+	./output inputFile.txt
+	
 clean: 
 	rm output
-
-run: output
-	./output
-
-detectleaks: 
-	valgrind ./output
-
+	
+test: 
+	valgrind --leak-check=full ./output inputFile.txt 
