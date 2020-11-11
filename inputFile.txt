@@ -1,7 +1,7 @@
 ab|
 aE|
 ab&
-a*
+a&
 ab|*
 a*b|
 ab|*b&

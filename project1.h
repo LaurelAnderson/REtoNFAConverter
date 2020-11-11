@@ -48,6 +48,7 @@ struct nfa* kleeneNfa(int, struct nfa*);
 //prints the trans steps for the stack given. 
 void printNfa(struct stack*); 
 
-
+//frees single nfas
+void freeAll(struct nfa*); 
 
 #endif

@@ -240,6 +240,19 @@ void printNfa(struct stack* stack){
 	 
 }
 
+void freeAll(struct nfa* nfa){
+
+		//frees the trans on the given nfa
+		struct trans *test_trans;
+
+		while(nfa->trans_list != NULL){
+			test_trans = nfa->trans_list; 
+			nfa->trans_list = nfa->trans_list->next_trans; 
+			free(test_trans); 	
+		}
+		free(nfa); 
+}
+
 
 
 

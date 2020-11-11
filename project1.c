@@ -42,7 +42,7 @@ int main(int argc, char **argv){
 								
 				//pop how many nfas this line pushed
 				while(count>0){
-					free(pop(stack));
+					freeAll(pop(stack));
 					count--; 
 				} 
 				  
@@ -65,7 +65,7 @@ int main(int argc, char **argv){
 				
 				//pop how many nfas this line pushed
 				while(count>0){
-					free(pop(stack));
+					freeAll(pop(stack));
 					count--; 
 				}				
 	
